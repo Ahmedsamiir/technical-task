@@ -6,11 +6,8 @@ import 'package:technicaltask/shared/network/remote.dart';
 import 'package:technicaltask/shared/style/style.dart';
 
 void main() {
-
   DioHelper.init();
-  runApp(
-      const MyApp()
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -24,9 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
       home: BlocProvider(
-          create: (context)=> ExhibitCubit(),
-          child: HomeScreen()),
+          create: (context) => ExhibitCubit(), child: HomeScreen()),
     );
   }
 }
-

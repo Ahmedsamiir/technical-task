@@ -22,8 +22,8 @@ class ListOfImages extends StatelessWidget {
           Text(
             exhibit.title!,
             style: TextStyle(
-                fontWeight: FontWeight.w600,
-                fontSize: 15.0,
+              fontWeight: FontWeight.w600,
+              fontSize: 15.0,
             ),
           ),
           const SizedBox(

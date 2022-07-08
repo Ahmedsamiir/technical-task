@@ -1,17 +1,8 @@
-abstract  class ExhibitsLoader{
-
+abstract class ExhibitsLoader {
   Future<List<Exhibit>> getExhibitList();
 }
-class Exhibit {
-/*
-{
-  "title": "iPhone 5s",
-  "images": [
-    "https://upload.wikimedia.org/wikipedia/commons/f/fd/IPhone_5S.jpg"
-  ]
-}
-*/
 
+class Exhibit {
   String? title;
   List<String>? images;
 
@@ -19,6 +10,7 @@ class Exhibit {
     this.title,
     this.images,
   });
+
   Exhibit.fromJson(Map<String, dynamic> json) {
     title = json['title']?.toString();
     if (json['images'] != null) {
@@ -30,5 +22,4 @@ class Exhibit {
       images = arr0;
     }
   }
-
 }

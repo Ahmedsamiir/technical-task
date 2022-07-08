@@ -1,4 +1,3 @@
-
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
@@ -8,8 +7,7 @@ class DioHelper {
   static Future<Response> getData({
     required String url,
     required Map<String, dynamic>? query,
-  }) async
-  {
+  }) async {
     return await dio.get(
       url,
       queryParameters: query,
